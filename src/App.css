@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -51,8 +51,7 @@
 }
 
 .review-section {
-  background: linear-gradient(to bottom, #0099cc, #00cc99); /* Use your gradient colors */
-  color: #fff;
+  background: linear-gradient(to bottom, #0099cc, #00cc99); 
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -129,6 +128,92 @@
     transform: rotate(360deg);
   }
 }
+
+/* Animated slide-up effect */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animated fade-in effect */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply animations to elements with specific classes */
+.animated-slide-up {
+  animation: slide-up 0.5s ease forwards;
+}
+
+.animated-fade-in {
+  animation: fade-in 0.5s ease forwards;
+}
+
+.section-space {
+  margin-bottom: 100px; /
+}
+
+.section-title {
+  font-size: 33 px;
+  color: #333; 
+}
+
+.our-purpose {
+  background-color: linear-gradient(to bottom, #00cc99, #0099cc, #005b99);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase the values here */
+  margin: 20px 0;
+  transition: box-shadow 0.3s ease; /* Optional: Add transition for smooth change */
+}
+
+
+.purpose-content {
+  font-size: 18px;
+  color: #555; 
+}
+
+.status-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Horizontally center-align */
+  margin-top: 20px;
+}
+
+/* Styling for the GIF */
+.status-gif {
+  max-width: 300px;
+  margin-right: 20px;
+  margin-left: 0; /* Remove the right margin and add left margin to move the GIF to the left */
+}
+/* Styling for the status labels */
+.status-label {
+  margin-right: 80px;
+  font-size: 20px;
+}
+
+/* Styling for OK status */
+.status-ok {
+  color: #0cd033; /* OK status color */
+}
+
+/* Styling for problem status */
+.status-problem {
+  color: #ff3300; /* Problem status color */
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {

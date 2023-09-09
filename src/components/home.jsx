@@ -37,8 +37,11 @@ function Home() {
   return (
     <div className="home">
       <div className="gradient-background">
-        <h2>Welcome to the LDR Monitoring Website</h2>
+        <h2 className="animated-text">Welcome to the Wire-Eye Monitoring Website</h2>
+        <div className="section-space"></div>
         <Status />
+
+        <div className="section-space"></div>
 
         <div className="button-container">
           <button
@@ -49,7 +52,7 @@ function Home() {
           </button>
 
           {showRecentAlerts && (
-            <div>
+            <div className="animated-slide-up">
               <h3>Recent Alerts</h3>
               <ul>
                 {alerts.map((alert) => (
@@ -63,20 +66,18 @@ function Home() {
             </div>
           )}
 
-          <button
-            className={`toggle-button ${showOurPurpose ? 'active' : ''}`}
-            onClick={() => setShowOurPurpose(!showOurPurpose)}
-          >
-            {showOurPurpose ? 'Hide Our Purpose' : 'Show Our Purpose'}
-          </button>
+          {/* User Guide Section */}
 
-          {/* Button for showing/hiding the review section */}
-          <button
-            className={`toggle-button ${showReviews ? 'active' : ''}`}
-            onClick={() => setShowReviews(!showReviews)}
-          >
-            {showReviews ? 'Hide Reviews' : 'Show Reviews'}
-          </button>
+          {showUserGuide && (
+           <div className="user-guide animated-fade-in">
+            <h3>User Guide</h3>
+            <p>
+              Here is a user guide that guides you through our website.
+            </p>
+            
+          </div>
+          )}
+
 
           {/* Button for showing/hiding the user guide section */}
           <button
@@ -87,45 +88,60 @@ function Home() {
           </button>
         </div>
 
-        {showOurPurpose && (
-          <div className="our-purpose">
-            <h2>Our Purpose</h2>
-            <p>
-              Welcome to our website Wire-Eye. Here we aim to provide
-              you with a reliable LDR monitoring system that can make your
-              job much easier. We offer a smart monitoring
-              system that alerts you during wire breakage or light malfunctions.
-              In addition, we provide a status message that updates you on the condition
-              of the wire and lights.
-            </p>
-          </div>
-        )}
+        <div className="section-space"></div>
 
+        {/* Our Purpose Section */}
+        <div className="our-purpose animated-fade-in">
+            <h2 className="section-title">Our Purpose</h2>
+            <div className="purpose-content">
+                <p>
+                    At Wire-Eye, our purpose is to empower you with cutting-edge solutions for light-dependent resistor (LDR) monitoring. We are committed to making your job easier by offering a smart monitoring system that ensures the safety and reliability of your lighting infrastructure.
+                </p>
+                <p>
+                     Our mission is to provide you with real-time insights and alerts, helping you detect wire breakages and light malfunctions promptly. We understand the importance of maintaining a well-lit environment for safety and security, and our technology is designed to assist you in achieving just that.
+                </p>
+
+                <h3>
+                    With Wire-Eye, you can count on :
+                </h3>
+                <ul>
+                    <li>Accurate and Timely Alerts: Our system delivers precise alerts, enabling you to take immediate action and prevent potential hazards.</li>
+                    <br/>
+                    <li>24/7 Support       : We're here for you around the clock, ready to assist with any issues or questions you may have. We also value your feedback, which you can share with us in our review section.</li>
+                    <br/>
+                    <li>Robust Security    : Rest assured that your data is fully protected and secure on our platform. We prioritize data integrity and confidentiality to maintain your trust.</li>
+                </ul>
+            </div>
+        </div>
+
+          <div className="section-space"></div>
+        
+        
         {/* Review Section */}
-        {showReviews && (
-          <div className="review-section">
+        
+          <div className="review-section animated-fade-in">
             <h3>Submit a Review</h3>
             <div className="review-form">
               <input
                 type="text"
-                placeholder="Problem"
+                placeholder="Describe the problem"
                 value={reviewInput.problem}
                 onChange={(e) => setReviewInput({ ...reviewInput, problem: e.target.value })}
               />
               <input
                 type="email"
-                placeholder="Email"
+                placeholder="Your Email"
                 value={reviewInput.email}
                 onChange={(e) => setReviewInput({ ...reviewInput, email: e.target.value })}
               />
               <button onClick={handleSubmitReview}>Submit</button>
             </div>
           </div>
-        )}
+        
 
         {/* Display Submitted Reviews */}
-        {showReviews && submittedReviews.length > 0 && (
-          <div className="submitted-reviews">
+        
+          <div className="submitted-reviews animated-fade-in">
             <h3>Submitted Reviews</h3>
             <ul>
               {submittedReviews.map((review, index) => (
@@ -136,17 +152,8 @@ function Home() {
               ))}
             </ul>
           </div>
-        )}
-
-        {/* User Guide Section */}
-        {showUserGuide && (
-          <div className="user-guide">
-            <h3>User Guide</h3>
-            <h4>
-                Here is a user guide that guides you through our website .
-            </h4>
-          </div>
-        )}
+        
+        
       </div>
     </div>
   );

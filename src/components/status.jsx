@@ -1,38 +1,46 @@
 import React, { useState } from 'react';
+import StatusGif from '../assets/neon-circle.gif';
 
 export default function Status() {
-  // Simulate status data (you can replace this with real data)
+  
   const [lightStatus, setLightStatus] = useState(true);
   const [wireStatus, setWireStatus] = useState(true);
   const [wireLeakage, setWireLeakage] = useState(false);
 
-  // Function to render status text or numbers
+  
   const renderStatus = (status, okText, problemText) => {
     return status ? <span>All OK</span> : <span>{problemText}</span>;
   };
 
   return (
     <div>
-      {/* Display a GIF (replace with your actual GIF) */}
-      <img
-        src="your_gif_url_here.gif"
-        alt="Status GIF"
-        style={{ width: '100%', maxWidth: '400px' }}
-      />
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+        {/* Display a GIF (replace with your actual GIF) */}
+        <img
+          src={StatusGif}
+          alt="Status GIF"
+          style={{ maxWidth: '200px', marginRight: '20px' }} // Adjust the max width and margin as needed
+        />
 
-      {/* Light Status */}
-      <div>
-        Light Status: {renderStatus(lightStatus, 'All OK', '1')}
-      </div>
+        <div>
+          {/* Light Status */}
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <span style={{ marginRight: '10px', fontSize: '20px' }}>Light Status:</span>
+            {renderStatus(lightStatus, 'All OK', '1')}
+          </div>
 
-      {/* Wire Status */}
-      <div>
-        Wire Status: {renderStatus(wireStatus, 'All OK', '2')}
-      </div>
+          {/* Wire Status */}
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <span style={{ marginRight: '10px', fontSize: '20px' }}>Wire Status:</span>
+            {renderStatus(wireStatus, 'All OK', '2')}
+          </div>
 
-      {/* Wire Leakage */}
-      <div>
-        Wire Leakage: {renderStatus(!wireLeakage, 'All OK', 'Not OK')}
+          {/* Wire Leakage */}
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <span style={{ marginRight: '10px', fontSize: '20px' }}>Wire Leakage:</span>
+            {renderStatus(!wireLeakage, 'All OK', 'Not OK')}
+          </div>
+        </div>
       </div>
     </div>
   );

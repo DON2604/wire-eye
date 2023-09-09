@@ -145,7 +145,6 @@ function Home() {
             <p>
               Here is a user guide section that provides instructions and guidance
               on how to use our LDR monitoring system effectively.
-              
             </p>
           </div>
         )}

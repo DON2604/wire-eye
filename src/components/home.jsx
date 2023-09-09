@@ -9,10 +9,11 @@ function Home() {
   const [showRecentAlerts, setShowRecentAlerts] = useState(false);
   const [showOurPurpose, setShowOurPurpose] = useState(false);
   const [showReviews, setShowReviews] = useState(false); // State for showing/hiding reviews
+  const [showUserGuide, setShowUserGuide] = useState(false); // State for showing/hiding user guide
   const [reviewInput, setReviewInput] = useState({ problem: '', email: '' });
   const [submittedReviews, setSubmittedReviews] = useState([]);
 
-  const serverEndpoint = 'https://your-server-api-url.com/alerts'; // Replace with our server endpoint
+  const serverEndpoint = 'https://your-server-api-url.com/alerts'; // Replace with your server endpoint
 
   useEffect(() => {
     axios
@@ -76,6 +77,14 @@ function Home() {
           >
             {showReviews ? 'Hide Reviews' : 'Show Reviews'}
           </button>
+
+          {/* Button for showing/hiding the user guide section */}
+          <button
+            className={`toggle-button ${showUserGuide ? 'active' : ''}`}
+            onClick={() => setShowUserGuide(!showUserGuide)}
+          >
+            {showUserGuide ? 'Hide User Guide' : 'Show User Guide'}
+          </button>
         </div>
 
         {showOurPurpose && (
@@ -84,7 +93,7 @@ function Home() {
             <p>
               Welcome to our website Wire-Eye. Here we aim to provide
               you with a reliable LDR monitoring system that can make your
-              job much easier. We offer a smart monitoring 
+              job much easier. We offer a smart monitoring
               system that alerts you during wire breakage or light malfunctions.
               In addition, we provide a status message that updates you on the condition
               of the wire and lights.
@@ -126,6 +135,18 @@ function Home() {
                 </li>
               ))}
             </ul>
+          </div>
+        )}
+
+        {/* User Guide Section */}
+        {showUserGuide && (
+          <div className="user-guide">
+            <h3>User Guide</h3>
+            <p>
+              Here is a user guide section that provides instructions and guidance
+              on how to use our LDR monitoring system effectively.
+              
+            </p>
           </div>
         )}
       </div>

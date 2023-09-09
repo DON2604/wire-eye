@@ -142,10 +142,9 @@ function Home() {
         {showUserGuide && (
           <div className="user-guide">
             <h3>User Guide</h3>
-            <p>
-              Here is a user guide section that provides instructions and guidance
-              on how to use our LDR monitoring system effectively.
-            </p>
+            <h4>
+                Here is a user guide that guides you through our website .
+            </h4>
           </div>
         )}
       </div>

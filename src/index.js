@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FirebaseProvider } from './context/Firebase';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <BrowserRouter>
   <React.StrictMode>
     <FirebaseProvider>
       <App />
     </FirebaseProvider>
   </React.StrictMode>
+  </BrowserRouter>
 );

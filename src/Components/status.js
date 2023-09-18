@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "../Styles/status.css";
 
 const status = () => {
   return (

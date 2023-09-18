@@ -37,10 +37,6 @@ body, h1, h2, p, ol {
     text-align: center; /* Center-align content on small screens */
   }
   
-  .image-container {
-    margin-top: 20px; /* Add margin for spacing */
-  }
-  
   .image-container img {
     max-width: 100%; /* Make images responsive */
     height: auto;
@@ -85,8 +81,8 @@ body, h1, h2, p, ol {
   .text-content {
     font-size: 20px;
     color: beige;
-    flex: 1;
-    text-align: left;
+    /* flex: 1;
+    text-align: left; */
   }
   
   .image-container {
@@ -96,6 +92,7 @@ body, h1, h2, p, ol {
   .image-container img {
     max-width: 100%; /* Ensure the image is responsive */
     height: auto;
+    padding-left: 100px;
   }
   
 

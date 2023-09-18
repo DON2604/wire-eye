@@ -12,13 +12,58 @@ code {
     monospace;
 }
 
-.brand {
-  margin-left: -140px;
+/* Add the gradient background */
+.navbar-custom {
+  background: linear-gradient(to right, #6950f5, #8432f0);
 }
 
-.small {
-  width: 50px; 
-  height: auto; 
+/* Style the logo */
+.logo {
+  width: 40px; /* Adjust the logo width as needed */
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Style the navigation links */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
   margin-right: 20px;
 }
 
+/* Override Bootstrap's default styles for the navbar */
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-collapse {
+      background-color: #6950f5;
+  }
+
+  .navbar-nav {
+      text-align: center;
+      width: 100%;
+      padding-top: 20px;
+  }
+
+  .nav-item {
+      padding: 10px 0;
+  }
+
+  .navbar-toggler-icon {
+      background-color: #fff;
+  }
+}
+
+.website-name {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-left: 40px; /* Adjust the padding as needed to move it to the left */
+}

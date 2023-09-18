@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/home.css";
-import light from "../Assets/light.png";
+import light from "../Assets/light.gif";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Home = () => {

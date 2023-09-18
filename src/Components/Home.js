@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "../Styles/home.css";
 import light from "../Assets/light.png";
 
 const Home = () => {

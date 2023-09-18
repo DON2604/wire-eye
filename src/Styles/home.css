@@ -1,0 +1,44 @@
+.home-container {
+    background-image: url("../Assets/cktbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+  }
+  
+  .head {
+    text-align: left;
+    margin-left: 6.25rem;
+    color: bisque;
+  }
+  
+  .topic{
+    margin-top: -1.875rem;
+    font-size: 1.25rem;
+    text-align: left;
+    margin-left: 6.25rem;
+    margin-right: 31.25rem;
+    color: bisque;
+  }
+  
+  /* index.css */
+  /* Your existing styles */
+  
+  .topic {
+    display: flex; /* Use flexbox to create a side-by-side layout */
+    justify-content: space-between; /* Space evenly between the text and the image */
+    align-items: center; /* Vertically center align content */
+  }
+  
+  .topic-content {
+    flex: 1; /* Allow the text content to grow to fill available space */
+  }
+  
+  .image-container {
+    margin-left: 6.25rem;
+    margin-right: -21rem;; /* Adjust this margin as needed to create spacing between text and image */
+  }
+  
+  .tosi{
+    font-size: 1.25rem;
+  }

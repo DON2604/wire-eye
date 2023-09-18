@@ -10,7 +10,7 @@ function Header() {
     <nav className="navbar navbar-expand-lg navbar-custom">
       <a className="navbar-brand" href="#">
         <img src={logoImage} alt="Logo" className="logo" />
-        <span className="website-name">Website Name</span>
+        <span className="website-name">Wire Eye</span>
       </a>
       <button
         className="navbar-toggler"
@@ -29,17 +29,17 @@ function Header() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" >
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" >
               Status
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" >
               Problem
             </a>
           </li>

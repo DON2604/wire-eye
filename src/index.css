@@ -67,3 +67,8 @@ code {
   align-items: center;
   padding-left: 40px; /* Adjust the padding as needed to move it to the left */
 }
+
+a.nav-link{
+  color: beige;
+  font-weight: 200;
+}

@@ -13,6 +13,9 @@ body, h1, h2, p, ol {
     font-size: 16px; /* Set a base font size */
     line-height: 1.5; /* Set line height for better readability */
     padding: 40px; /* Add padding for better spacing */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   
   .head {

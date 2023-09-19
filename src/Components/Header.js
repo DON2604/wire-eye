@@ -27,7 +27,7 @@ function Header() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to="/Home" className="nav-link">
+            <Link to="/" className="nav-link">
               <b>Home</b>
             </Link>
           </li>

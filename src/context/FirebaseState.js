@@ -25,9 +25,7 @@ export const FirebaseProvider = (props) => {
   const GetPost = async () => {
       onValue(ref(database, "POST"), (snapshot) => {
         const res = snapshot.val();
-        const json = JSON.stringify(res)
-        setPost(json);
-        console.log(json)
+        setPost(res);
       });
   };
 

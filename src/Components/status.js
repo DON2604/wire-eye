@@ -16,12 +16,17 @@ const Status = () => {
     { post: "POST 8", working: true },
   ];
 
-    // Define the postIds array
-    const postIds = lightsStatus.map((item) => item.post);
-
     useEffect(() => {
       GetPost();
     }, [])
+    const keysArray = Object.keys(Post);
+        const valuesArray = Object.values(Post);
+        keysArray.forEach((key, index) => {
+            const value = valuesArray[index];
+            console.log(`Key: ${key}, Value: ${value}`);
+          });
+
+
   return (
     <>
       <div className="home-container">

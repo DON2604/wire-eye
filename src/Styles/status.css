@@ -11,7 +11,7 @@
 .sthead {
   font-size: 4rem;
   color: white;
-  margin-top: -60%;
+  margin-top: -42%;
 }
 
 .center {
@@ -32,7 +32,7 @@
   border-radius: 0.1875rem;
   box-shadow: 0.625rem 0.625rem 0.9375rem 0 rgba(0, 0, 0, 1.6);
   overflow: hidden;
-  margin-top: -55%;
+  margin-top: -40%;
   width: 60%;
   margin-left: 20%;
   margin-bottom: 20%;
@@ -41,13 +41,14 @@
 table {
   width: 100%;
   border-collapse: collapse;
+  text-align: center;
 }
 
 th,
 td {
   padding: 1rem;
-  text-align: left;
   border-bottom: 0.0625rem solid #e1cfc2;
+  font-size: 1.8rem;
 }
 
 th {

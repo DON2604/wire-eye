@@ -1,66 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
-.frame {
-  position: relative;
-  margin-top: 3%;
-  width: 90.25rem; /* Adjust the width of your box as needed */
-  height: 25rem;
-  border-radius: 2.75rem;
-  box-shadow: 0.0625rem 0.125rem 0.625rem 0rem rgba(0, 0, 0, 0.3);
-  background: #8432f0;
-  background: linear-gradient(to top right, #6950f5 0%, #8432f0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#6950f5", endColorstr="#8432f0",GradientType=1 );
-  color: #8432f0;
-  font-family: "Open Sans", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-.center {
-  position: relative;
-  top: 3.125rem;
-  left: 2.5rem;
-  height: 18.6875rem;
-  width: 84rem;
-  background: #fff;
-  border-radius: 0.1875rem;
-  overflow: hidden;
-  box-shadow: 0.625rem 0.625rem 0.9375rem 0 rgba(0, 0, 0, 0.3);
-}
-
-.stats {
-  float: left;
-}
-.stats .box {
-  box-sizing: border-box;
-  width: 7.5rem;
-  height: 6.1875rem;
-  background: #f5e8df;
-  text-align: center;
-  padding-top: 1.75rem;
-  transition: all 0.4s ease-in-out;
-}
-.stats .box:hover {
-  background: #e1cfc2;
-  cursor: pointer;
-}
-.stats .box:nth-child(2) {
-  margin: 0.0625rem 0;
-}
-.stats span {
-  display: block;
-}
-.stats .value {
-  font-size: 1.125rem;
-  font-weight: 600;
-}
-.stats .parameter {
-  font-size: 0.6875rem;
-}
 /* Status Report Styles */
 
 .home-container {
-  background-image: url("../Assets/cktbg.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
@@ -68,10 +9,9 @@
 }
 
 .sthead {
-  font-size: 2rem;
+  font-size: 4rem;
   color: white;
-  margin-top: 1rem;
-  margin-top: -700px;
+  margin-top: -60%;
 }
 
 .center {
@@ -92,9 +32,10 @@
   border-radius: 0.1875rem;
   box-shadow: 0.625rem 0.625rem 0.9375rem 0 rgba(0, 0, 0, 1.6);
   overflow: hidden;
-  margin-top: -666px;
+  margin-top: -55%;
   width: 60%;
-  margin-left: 290px;
+  margin-left: 20%;
+  margin-bottom: 20%;
 }
 
 table {

@@ -1,54 +1,47 @@
 import React from "react";
 import "../Styles/status.css";
 
-const status = () => {
+const Status = () => {
+  
+  const lightsStatus = [
+    { post: "POST 1", working: true },
+    { post: "POST 2", working: false },
+    { post: "POST 3", working: true },
+    { post: "POST 4", working: false },
+    { post: "POST 5", working: true },
+    { post: "POST 6", working: true },
+    { post: "POST 7", working: false },
+    { post: "POST 8", working: true },
+  ];
+
   return (
     <>
       <div className="home-container">
         <br />
         <h1 className="sthead">Status Report</h1>
-        <div className="frame">
-          <div className="center">
-            <div className="profile">
-              <div className="image">
-                <div className="circle-1"></div>
-                <div className="circle-2"></div>
-                <img
-                  src="https://100dayscss.com/codepen/jessica-potter.jpg"
-                  width="70"
-                  height="70"
-                  alt="Jessica Potter"
-                />
-              </div>
-
-              <div className="name">Jessica Potter</div>
-              <div className="job">Visual Artist</div>
-
-              <div className="actions">
-                <button className="btn">Follow</button>
-                <button className="btn">Message</button>
-              </div>
-            </div>
-
-            <div className="stats">
-              <div className="box">
-                <span className="value">523</span>
-                <span className="parameter">Posts</span>
-              </div>
-              <div className="box">
-                <span className="value">1387</span>
-                <span className="parameter">Likes</span>
-              </div>
-              <div className="box">
-                <span className="value">146</span>
-                <span className="parameter">Follower</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div className="status-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Post</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {lightsStatus.map((item, index) => (
+              <tr key={index}>
+                <td>{item.post}</td>
+                <td>
+                  <div className={`status-light ${item.working ? "green" : "red"}`}></div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </>
   );
 };
 
-export default status;
+export default Status;

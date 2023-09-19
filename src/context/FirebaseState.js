@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, onValue } from "firebase/database";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FirebaseContext from "./Firebase";
 
 const firebaseConfig = {

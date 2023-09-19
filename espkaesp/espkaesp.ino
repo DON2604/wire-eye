@@ -44,21 +44,21 @@ if (Firebase.ready() && signupOK) {
   if(Serial.available()){  
     int data = Serial.parseInt();
     if(data==11 || data==10)
-    Firebase.RTDB.setInt(&fbdo, "/Post1", data);
+    Firebase.RTDB.setInt(&fbdo, "/POST/Post1", data);
     if(data==21 || data==20)
-    Firebase.RTDB.setInt(&fbdo, "/Post2", data);
+    Firebase.RTDB.setInt(&fbdo, "/POST/Post2", data);
     if(data==31 || data==30)
-    Firebase.RTDB.setInt(&fbdo, "/Post3", data);
+    Firebase.RTDB.setInt(&fbdo, "/POST/Post3", data);
     if(data==41 || data==40)
-    Firebase.RTDB.setInt(&fbdo, "/Post4", data);
+    Firebase.RTDB.setInt(&fbdo, "/POST/Post4", data);
     if(data==51 || data==50)
-    Firebase.RTDB.setInt(&fbdo, "/Post5", data);
+    Firebase.RTDB.setInt(&fbdo, "/POST/Post5", data);
     if(data==61 || data==60)
-    Firebase.RTDB.setInt(&fbdo, "/Post6", data);
+    Firebase.RTDB.setInt(&fbdo, "/POST/Post6", data);
     if(data==71 || data==70)
-    Firebase.RTDB.setInt(&fbdo, "/Post7", data);
+    Firebase.RTDB.setInt(&fbdo, "/POST/Post7", data);
     if(data==81 || data==80)
-    Firebase.RTDB.setInt(&fbdo, "/Post8", data);
+    Firebase.RTDB.setInt(&fbdo, "/POST/Post8", data);
     }
 
 }            

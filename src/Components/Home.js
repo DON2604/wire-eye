@@ -44,7 +44,7 @@ const Home = () => {
         </Container>
       </div>
       <div className="head">
-        <h1>Proposed Solution</h1>
+        <br/><br/><h1>Proposed Solution</h1>
         <div className="tosi">
           <h2>What it Does:</h2>
           <p>

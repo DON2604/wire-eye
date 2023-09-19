@@ -1,17 +1,15 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import logoImage from "../Assets/eye.png";
 import "../index.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom">
-      <a className="navbar-brand" href="#">
+      <Link className="navbar-brand" href="#">
         <img src={logoImage} alt="Logo" className="logo" />
         <span className="website-name">Wire Eye</span>
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -29,19 +27,19 @@ function Header() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" >
+            <Link to="/Home" className="nav-link" >
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" >
+            <Link to="/Status" className="nav-link" >
               Status
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" >
+            <Link to="/Problem" className="nav-link" >
               Problem
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

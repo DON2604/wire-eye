@@ -1,8 +1,10 @@
-import React from "react";
-import { FirebaseProvider } from "../context/Firebase";
+import React, { useContext, useEffect } from "react";
+import FirebaseContext from "../context/Firebase";
 import "../Styles/status.css";
 
 const Status = () => {
+  const context = useContext(FirebaseContext);
+  const { Post, GetPost } = context;
   const lightsStatus = [
     { post: "POST 1", working: true },
     { post: "POST 2", working: true },
@@ -17,6 +19,9 @@ const Status = () => {
     // Define the postIds array
     const postIds = lightsStatus.map((item) => item.post);
 
+    useEffect(() => {
+      GetPost();
+    }, [])
   return (
     <>
       <div className="home-container">
@@ -47,7 +52,6 @@ const Status = () => {
           </tbody>
         </table>
       </div>
-      <FirebaseProvider postIds={postIds} />
     </>
   );
 };

@@ -83,7 +83,11 @@ const Home = () => {
             conditions without physical presence. It's invaluable for tasks like
             greenhouse management, home security, or weather tracking, ensuring
             that you're always informed and in control, just like having two
-            reliable assistants!
+            reliable assistants!"The proposed solution brings immense value to our project by
+            introducing real-time data collection and remote monitoring capabilities. 
+            With the integration of two Arduino boards and Firebase, we empower our project with the ability to capture
+            crucial environmental data such as temperature and humidity, which is essential for informed decision-making. 
+            
           </p>
         </div>
       </div>

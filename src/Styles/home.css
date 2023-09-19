@@ -77,13 +77,13 @@ body, h1, h2, p, ol {
   }
   .tosi p{
     color: #333;
-    font-weight: bold;
+    font-weight: bolder;
     margin-top: 10px;
   }
   
   .tosi li{
     color: #333;
-    font-weight: bold;
+    font-weight: bolder;
     margin-top: 10px;
   }
   

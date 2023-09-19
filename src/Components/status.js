@@ -1,11 +1,11 @@
 import React from "react";
+import { FirebaseProvider } from "../context/Firebase";
 import "../Styles/status.css";
 
 const Status = () => {
-  
   const lightsStatus = [
     { post: "POST 1", working: true },
-    { post: "POST 2", working: false },
+    { post: "POST 2", working: true },
     { post: "POST 3", working: true },
     { post: "POST 4", working: false },
     { post: "POST 5", working: true },
@@ -13,6 +13,9 @@ const Status = () => {
     { post: "POST 7", working: false },
     { post: "POST 8", working: true },
   ];
+
+    // Define the postIds array
+    const postIds = lightsStatus.map((item) => item.post);
 
   return (
     <>
@@ -26,6 +29,7 @@ const Status = () => {
             <tr>
               <th>Post</th>
               <th>Status</th>
+              <th>Problem</th>
             </tr>
           </thead>
           <tbody>
@@ -33,13 +37,17 @@ const Status = () => {
               <tr key={index}>
                 <td>{item.post}</td>
                 <td>
-                  <div className={`status-light ${item.working ? "green" : "red"}`}></div>
+                  <div
+                    className={`status-light ${item.working ? "green" : "red"}`}
+                  ></div>
                 </td>
+                <td>All OK</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      <FirebaseProvider postIds={postIds} />
     </>
   );
 };

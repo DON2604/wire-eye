@@ -21,10 +21,13 @@ const FirebaseContext = createContext(null);
 export const useFirebase = () => useContext(FirebaseContext);
 
 export const FirebaseProvider = (props) => {
-  const [Post, setPost] = useState("");
+  const [Post, setPost] = useState([]);
 
   useEffect(() => {
-    onValue(ref(database, "Post1"), (snapshot) => setPost(snapshot.val()));
+    onValue(ref(database, "POST"), (snapshot) => {
+    console.log(snapshot.val());
+    setPost(snapshot.val());
+  });
   }, []);
 
   return (

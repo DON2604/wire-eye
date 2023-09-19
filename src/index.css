@@ -14,7 +14,7 @@ code {
 
 /* Add the gradient background */
 .navbar-custom {
-  background: linear-gradient(to right, #6950f5, #8432f0);
+  background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
 }
 
 /* Style the logo */
@@ -59,7 +59,8 @@ code {
 
 .website-name {
   font-size: 1.5rem; /* Adjust the font size as needed */
-  font-weight: bold; /* Adjust the font weight as needed */
+  font-weight: bold;
+  color: #fff; /* Adjust the font weight as needed */
 }
 
 .navbar-brand {
@@ -71,4 +72,5 @@ code {
 a.nav-link{
   color: beige;
   font-weight: 200;
+  font-size: 1.15rem;
 }

@@ -61,7 +61,10 @@
 /* Status Report Styles */
 
 .home-container {
-  background: linear-gradient(to top right, #6950f5 0%, #8432f0 100%);
+  background-image: url("../Assets/cktbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   text-align: center;
   padding: 2rem;
 }

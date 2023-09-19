@@ -28,17 +28,17 @@ function Header() {
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link to="/Home" className="nav-link" >
-              Home
+              <b>Home</b>
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/Status" className="nav-link" >
-              Status
+              <b>Status</b>
             </Link>
           </li>
           <li className="nav-item">
             <Link to="/Problem" className="nav-link" >
-              Problem
+            <b>Problem</b>
             </Link>
           </li>
         </ul>

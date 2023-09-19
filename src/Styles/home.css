@@ -15,6 +15,7 @@ body, h1, h2, p, ol {
     padding: 40px; /* Add padding for better spacing */
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
   
@@ -22,10 +23,12 @@ body, h1, h2, p, ol {
     text-align: left;
     margin-bottom: 20px; /* Add margin for spacing */
     color: bisque;
+    
   }
   
   .head h1 {
-    font-size: 24px; /* Increase font size for headings */
+    font-size: 36px;
+    text-align: center; /* Increase font size for headings */
   }
   
   .topic {
@@ -33,12 +36,22 @@ body, h1, h2, p, ol {
     flex-direction: column; /* Stack content vertically on small screens */
     align-items: center; /* Center-align content on small screens */
     margin-bottom: 20px;
+    background-color: rgba(252, 255, 255, 0.8); /* Add a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1.3);
   }
   
   .topic-content {
     max-width: 800px; /* Limit content width for better readability */
     text-align: center; /* Center-align content on small screens */
   }
+
+  .topic p {
+    color: #333;
+    font-weight: bold;
+  }
+  
   
   .image-container img {
     max-width: 100%; /* Make images responsive */
@@ -46,11 +59,29 @@ body, h1, h2, p, ol {
   }
   
   .tosi {
-    margin-top: 20px; /* Add margin for spacing */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically on small screens */
+    align-items: center; /* Center-align content on small screens */
+    margin-bottom: 20px;
+    background-color: rgba(252, 255, 255, 0.8); /* Add a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1.3); /* Add margin for spacing */
   }
   
   .tosi h2 {
-    font-size: 20px; /* Increase font size for subheadings */
+    font-size: 20px;
+    color: #333; /* Increase font size for subheadings */
+  }
+  .tosi p{
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .tosi li{
+    color: #333;
+    font-weight: bold;
   }
   
   /* Media query for smaller screens (e.g., mobile devices) */

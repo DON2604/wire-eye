@@ -51,9 +51,10 @@ const Home = () => {
             Our solution uses two Arduino boards to make tasks easier. One
             Arduino, equipped with special sensors, checks things like
             temperature and humidity, while the other Arduino sends this data to
-            Firebase, a cloud-based digital storage.
+            Firebase, a cloud-based digital storage. With its user-friendly interface,
+            you can access and visualize the collected data from anywhere, ensuring that you're always in control.
           </p>
-
+         
           <h2>How it Works:</h2>
           <ol>
             <li>

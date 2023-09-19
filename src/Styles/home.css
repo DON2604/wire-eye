@@ -71,17 +71,20 @@ body, h1, h2, p, ol {
   }
   
   .tosi h2 {
-    font-size: 20px;
-    color: #333; /* Increase font size for subheadings */
+    font-size: 28px;
+    color: #333;
+    margin-top: 10px; /* Increase font size for subheadings */
   }
   .tosi p{
     color: #333;
     font-weight: bold;
+    margin-top: 10px;
   }
   
   .tosi li{
     color: #333;
     font-weight: bold;
+    margin-top: 10px;
   }
   
   /* Media query for smaller screens (e.g., mobile devices) */

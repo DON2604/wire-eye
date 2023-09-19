@@ -19,14 +19,14 @@ const firebaseApp = initializeApp(firebaseConfig);
 const database = getDatabase(firebaseApp);
 
 export const FirebaseProvider = (props) => {
-    const initial = []
+  const initial = [];
   const [Post, setPost] = useState(initial);
 
   const GetPost = async () => {
-      onValue(ref(database, "POST"), (snapshot) => {
-        const res = snapshot.val();
-        setPost(res);
-      });
+    onValue(ref(database, "POST"), (snapshot) => {
+      const res = snapshot.val();
+      setPost(res);
+    });
   };
 
   return (

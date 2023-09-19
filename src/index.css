@@ -1,20 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* Add the gradient background */
 .navbar-custom {
-  background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+  background: linear-gradient(
+    109.6deg,
+    rgb(9, 9, 121) 11.2%,
+    rgb(144, 6, 161) 53.7%,
+    rgb(0, 212, 255) 100.2%
+  );
 }
 
 /* Style the logo */
@@ -39,21 +44,21 @@ code {
 /* Responsive styles */
 @media (max-width: 768px) {
   .navbar-collapse {
-      background-color: #6950f5;
+    background-color: #6950f5;
   }
 
   .navbar-nav {
-      text-align: center;
-      width: 100%;
-      padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
   }
 
   .nav-item {
-      padding: 10px 0;
+    padding: 10px 0;
   }
 
   .navbar-toggler-icon {
-      background-color: #fff;
+    background-color: #fff;
   }
 }
 
@@ -69,7 +74,7 @@ code {
   padding-left: 40px; /* Adjust the padding as needed to move it to the left */
 }
 
-a.nav-link{
+a.nav-link {
   color: beige;
   font-weight: 200;
   font-size: 1.15rem;

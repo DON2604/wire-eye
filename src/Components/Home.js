@@ -12,7 +12,7 @@ const Home = () => {
       <div className="topic">
         <Container>
           <Row className="text-and-image">
-            <Col className="text-content"  xs={12} md={6} xl={7}>
+            <Col className="text-content" xs={12} md={6} xl={7}>
               <p>
                 Electricity is the critical need for the progress of livelihood.
                 In many Indian cities, the maintenance of street lights has
@@ -51,10 +51,11 @@ const Home = () => {
             Our solution uses two Arduino boards to make tasks easier. One
             Arduino, equipped with special sensors, checks things like
             temperature and humidity, while the other Arduino sends this data to
-            Firebase, a cloud-based digital storage. With its user-friendly interface,
-            you can access and visualize the collected data from anywhere, ensuring that you're always in control.
+            Firebase, a cloud-based digital storage. With its user-friendly
+            interface, you can access and visualize the collected data from
+            anywhere, ensuring that you're always in control.
           </p>
-         
+
           <h2>How it Works:</h2>
           <ol>
             <li>
@@ -83,11 +84,12 @@ const Home = () => {
             conditions without physical presence. It's invaluable for tasks like
             greenhouse management, home security, or weather tracking, ensuring
             that you're always informed and in control, just like having two
-            reliable assistants!"The proposed solution brings immense value to our project by
-            introducing real-time data collection and remote monitoring capabilities. 
-            With the integration of two Arduino boards and Firebase, we empower our project with the ability to capture
-            crucial environmental data such as temperature and humidity, which is essential for informed decision-making. 
-            
+            reliable assistants!"The proposed solution brings immense value to
+            our project by introducing real-time data collection and remote
+            monitoring capabilities. With the integration of two Arduino boards
+            and Firebase, we empower our project with the ability to capture
+            crucial environmental data such as temperature and humidity, which
+            is essential for informed decision-making.
           </p>
         </div>
       </div>

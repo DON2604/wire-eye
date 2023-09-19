@@ -1,135 +1,145 @@
 /* Reset default margin and padding */
-body, h1, h2, p, ol {
-    margin: 0;
-    padding: 0;
-  }
-  
+body,
+h1,
+h2,
+p,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  background-image: url("../Assets/cktbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  font-size: 16px; /* Set a base font size */
+  line-height: 1.5; /* Set line height for better readability */
+  padding: 40px; /* Add padding for better spacing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.head {
+  text-align: left;
+  margin-bottom: 20px; /* Add margin for spacing */
+  color: bisque;
+}
+
+.head h1 {
+  font-size: 36px;
+  text-align: center; /* Increase font size for headings */
+}
+
+.topic {
+  display: flex;
+  flex-direction: column; /* Stack content vertically on small screens */
+  align-items: center; /* Center-align content on small screens */
+  margin-bottom: 20px;
+  background-color: rgba(
+    252,
+    255,
+    255,
+    0.8
+  ); /* Add a semi-transparent background */
+  padding: 20px;
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1.3);
+}
+
+.topic-content {
+  max-width: 800px; /* Limit content width for better readability */
+  text-align: center; /* Center-align content on small screens */
+}
+
+.topic p {
+  color: #333;
+  font-weight: bold;
+}
+
+.image-container img {
+  max-width: 100%; /* Make images responsive */
+  height: auto;
+}
+
+.tosi {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically on small screens */
+  align-items: center; /* Center-align content on small screens */
+  margin-bottom: 20px;
+  background-color: rgba(
+    252,
+    255,
+    255,
+    0.8
+  ); /* Add a semi-transparent background */
+  padding: 20px;
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1.3); /* Add margin for spacing */
+}
+
+.tosi h2 {
+  font-size: 28px;
+  color: #333;
+  margin-top: 10px; /* Increase font size for subheadings */
+}
+.tosi p {
+  color: #333;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+.tosi li {
+  color: #333;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
   .home-container {
-    background-image: url("../Assets/cktbg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    min-height: 100vh;
-    font-size: 16px; /* Set a base font size */
-    line-height: 1.5; /* Set line height for better readability */
-    padding: 40px; /* Add padding for better spacing */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 10px; /* Reduce padding for smaller screens */
   }
-  
-  .head {
-    text-align: left;
-    margin-bottom: 20px; /* Add margin for spacing */
-    color: bisque;
-    
-  }
-  
+
   .head h1 {
-    font-size: 36px;
-    text-align: center; /* Increase font size for headings */
+    font-size: 20px; /* Adjust font size for smaller screens */
   }
-  
+
   .topic {
-    display: flex;
-    flex-direction: column; /* Stack content vertically on small screens */
-    align-items: center; /* Center-align content on small screens */
-    margin-bottom: 20px;
-    background-color: rgba(252, 255, 255, 0.8); /* Add a semi-transparent background */
-    padding: 20px;
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 1.3);
-  }
-  
-  .topic-content {
-    max-width: 800px; /* Limit content width for better readability */
-    text-align: center; /* Center-align content on small screens */
+    margin-bottom: 10px; /* Reduce margin for spacing on smaller screens */
   }
 
-  .topic p {
-    color: #333;
-    font-weight: bold;
-  }
-  
-  
-  .image-container img {
-    max-width: 100%; /* Make images responsive */
-    height: auto;
-  }
-  
-  .tosi {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column; /* Stack content vertically on small screens */
-    align-items: center; /* Center-align content on small screens */
-    margin-bottom: 20px;
-    background-color: rgba(252, 255, 255, 0.8); /* Add a semi-transparent background */
-    padding: 20px;
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 1.3); /* Add margin for spacing */
-  }
-  
-  .tosi h2 {
-    font-size: 28px;
-    color: #333;
-    margin-top: 10px; /* Increase font size for subheadings */
-  }
-  .tosi p{
-    color: #333;
-    font-weight: bolder;
-    margin-top: 10px;
-  }
-  
-  .tosi li{
-    color: #333;
-    font-weight: bolder;
-    margin-top: 10px;
-  }
-  
-  /* Media query for smaller screens (e.g., mobile devices) */
-  @media (max-width: 768px) {
-    .home-container {
-      padding: 10px; /* Reduce padding for smaller screens */
-    }
-  
-    .head h1 {
-      font-size: 20px; /* Adjust font size for smaller screens */
-    }
-  
-    .topic {
-      margin-bottom: 10px; /* Reduce margin for spacing on smaller screens */
-    }
-  
-    .image-container {
-      margin-top: 10px; /* Reduce margin for spacing on smaller screens */
-    }
-  
-    .tosi h2 {
-      font-size: 18px; /* Adjust font size for smaller screens */
-    }
-  }
-
-  .text-and-image {
-    display: flex;
-    align-items: center;
-  }
-  
-  .text-content {
-    font-size: 20px;
-    color: beige;
-    /* flex: 1;
-    text-align: left; */
-  }
-  
   .image-container {
-    margin-left: 20px; /* Adjust margin as needed for spacing */
+    margin-top: 10px; /* Reduce margin for spacing on smaller screens */
   }
-  
-  .image-container img { /* Ensure the image is responsive */
-    height: 30rem;
-    padding-left: 80px;
-  }
-  
 
-  
+  .tosi h2 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
+
+.text-and-image {
+  display: flex;
+  align-items: center;
+}
+
+.text-content {
+  font-size: 20px;
+  color: beige;
+  /* flex: 1;
+    text-align: left; */
+}
+
+.image-container {
+  margin-left: 20px; /* Adjust margin as needed for spacing */
+}
+
+.image-container img {
+  /* Ensure the image is responsive */
+  height: 30rem;
+  padding-left: 80px;
+}

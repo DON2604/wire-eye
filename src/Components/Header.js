@@ -27,18 +27,18 @@ function Header() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to="/Home" className="nav-link" >
+            <Link to="/Home" className="nav-link">
               <b>Home</b>
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Status" className="nav-link" >
+            <Link to="/Status" className="nav-link">
               <b>Status</b>
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Problem" className="nav-link" >
-            <b>Problem</b>
+            <Link to="/Problem" className="nav-link">
+              <b>Problem</b>
             </Link>
           </li>
         </ul>

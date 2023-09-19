@@ -81,3 +81,23 @@ a.nav-link {
   font-weight: 200;
   font-size: 1.15rem;
 }
+
+
+/* Footer.css */
+
+.footer {
+  background: linear-gradient(to right, #090979, #88069e, #2998e4);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}

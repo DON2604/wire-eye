@@ -36,11 +36,6 @@ function Header() {
               <b>Status</b>
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/Problem" className="nav-link">
-              <b>Problem</b>
-            </Link>
-          </li>
         </ul>
       </div>
     </nav>

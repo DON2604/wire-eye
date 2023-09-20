@@ -1,13 +1,21 @@
 import React, { useContext, useEffect } from "react";
 import FirebaseContext from "../context/Firebase";
 import "../Styles/status.css";
+import Button from 'react-bootstrap/Button';
+import { useNavigate } from "react-router-dom";
 
 const Status = () => {
   const context = useContext(FirebaseContext);
   const { Post, GetPost } = context;
+  let navigate = useNavigate();
+
+  const handleClick = (problem) => {
+    navigate('/Problem', { state: { problem } })
+  }
 
   useEffect(() => {
     GetPost();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const keysArray = Object.keys(Post);
@@ -44,7 +52,7 @@ const Status = () => {
                     className={`status-light ${item.working ? "red" : "green"}`}
                   ></div>
                 </td>
-                <td>All OK</td>
+                <td>{!item.working? <Button variant="success">All OK</Button> : <Button variant="danger" onClick={() => handleClick(item.post)}>View Problem</Button>}</td>
               </tr>
             ))}
           </tbody>

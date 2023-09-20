@@ -1,0 +1,36 @@
+.problem-box {
+    position: relative;
+    background-color: beige;
+    border: 1px solid #ccc;
+    box-shadow:0.625rem 0.625rem 0.937rem 0;
+    border-radius: 16px;
+    width: 750px;
+    height: 300px; /* Adjust the height as needed */
+    margin: 0 auto;
+    text-align: center;
+    padding: 68px;
+  }
+  
+  .box-heading {
+    font-size: 3rem;
+    color:antiquewhite;
+    margin-top: 1.1%;
+    text-align: center;
+    margin-bottom: 2.9%;
+  }
+
+  .ut{
+    margin-top: 19.76%;
+  }
+  
+  .message-box {
+    margin-top: 10px; /* Adjust as needed for spacing between heading and message */
+  }
+  
+  .message {
+    font-size: 25px; /* Adjust the font size as needed */
+  }
+  
+.text{
+  color: red;
+}

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom">
-      <Link className="navbar-brand" href="#">
+      <Link className="navbar-brand" to="/">
         <img src={logoImage} alt="Logo" className="logo" />
         <span className="website-name">Wire Eye</span>
       </Link>

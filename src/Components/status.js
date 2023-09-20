@@ -41,7 +41,7 @@ const Status = () => {
                 <td>{item.post}</td>
                 <td>
                   <div
-                    className={`status-light ${item.working ? "green" : "red"}`}
+                    className={`status-light ${item.working ? "red" : "green"}`}
                   ></div>
                 </td>
                 <td>All OK</td>
